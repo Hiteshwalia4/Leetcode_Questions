@@ -37,5 +37,25 @@ class Solution {
         slow.next=var;
         return head;
 
+      // Method 2
+        // int k=1;
+        // ListNode even= new ListNode();  
+        // ListNode odd= new ListNode();
+        // ListNode i=odd,j=even; 
+        // while(head!=null){
+        //     if(k%2==0){
+        //         j.next=head;
+        //         j=j.next;
+        //     }
+        //     else{
+        //         i.next=head;
+        //         i=i.next;
+        //     }
+        //     head=head.next;
+        //     k++;
+        // } 
+        // j.next=null;
+        // i.next=even.next;
+        // return odd.next;
     }
 }
